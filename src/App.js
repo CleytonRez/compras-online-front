@@ -10,6 +10,8 @@ import {
   NavbarToggler
 } from "reactstrap"
 import { Link } from 'react-router-dom'
+import Compras from './components/Compras';
+import NovoProduto from './components/NovoProduto';
 
 function App() {
   return (
@@ -17,26 +19,11 @@ function App() {
 
       <div className='container'>
 
-        <h1>COMPRAS ONLINE</h1>
-        <table className="table table-striped">
-          <thead>
-            <tr className='bg-danger'>
-              <th scope="col">ID</th>
-              <th scope="col">Nome</th>
-              <th scope="col">Quantidade</th>
-              <th scope="col">Valor</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Arroz</td>
-              <td>3</td>
-              <td>30</td>
-            </tr>
-            <button className='btn btn-warning'>X</button>
-          </tbody>
-        </table>
+        <h1 className='titulo'>COMPRAS ONLINE</h1>
+        <br />
+        <Compras />
+        <NovoProduto />
+        <button className='btn btn-primary'>Adicionar</button>
       </div>
     </div>
   );
